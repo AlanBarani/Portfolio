@@ -1,4 +1,21 @@
 :root{
     --customColor: #0044ff;
     --purple: #ce00ff;
+    --orange: #ff4600;
+    --blue: #0044ff;
+    --cyan: #03ffc7;
 }
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{}
