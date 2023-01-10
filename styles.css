@@ -73,7 +73,7 @@ li{
     z-index: -1;
 }
 
-@media only screen and (max max-width 996px){
+@media only screen and (max-width: 996px){
     .header{
         min-height: 60vh;
     }
@@ -83,14 +83,14 @@ li{
     }
 }
 
-@media only screen and (max max-width 768px){
+@media only screen and (max-width: 768px){
 
     .header img{
         width: 40rem;
     }
 }
 
-@media only screen and (max max-width 567px){
+@media only screen and (max-width: 567px){
     .header{
         min-height: 100vh;
     }
@@ -122,4 +122,123 @@ li{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.logo h1{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.logo h1 span{
+    font-weight: bold;
+    color: var(--customColor)
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item:not(:last-child){
+    margin-right: .5rem;
+}
+
+.nav-link:link,.nav-link:visited{
+    color: #fff;
+    padding: 0.8rem 1rem;
+    transition: all 300ms ease-in-out;
+}
+
+.nav-link:hover{
+    border-radius: .3rem;
+    background-color: var(--customColor);
+}
+
+.top-nav{
+    display: none;
+}
+
+.top-nav,.hamburguer{
+    display: none;   
+}
+
+@media only screen and (max-width: 768px){
+    .menu{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        max-width: 40rem;
+        height: 100%;
+        background-color: #fff;
+        transition: all 300ms ease-in-out;
+        z-index: 100;
+    }
+
+    .menu.show{
+        left: 0;
+    }
+
+    .top-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--customColor);
+        padding: 1rem 1.6rem;
+    }
+
+    .logo h1 span{
+        color: #fff;
+    }
+
+    .top-nav .close {
+        color: #fff;
+        font-size: 2.3rem;
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    .hamburguer{
+        display: block;
+        color:#fff;
+        font-size: 2.3rem;
+        padding: .5rem;
+        cursor: pointer;
+    }
+
+    .hamburguer{
+        display: block;
+        color: #fff;
+        font-size: 2.3rem;
+        padding: .5rem;
+        cursor: pointer;
+    }
+
+    .nav-link:link,.nav-link:visited{
+        display: block;
+        font-size: 1.7rem;
+        color: #222;
+        padding: 1rem 0;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 1.6rem;
+    }
+
+    body.show::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.8);
+        z-index: 1;
+    }
+
+    .nav.show{
+        background-color: rgba(0,0,0,.8);
+    }
 }
