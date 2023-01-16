@@ -431,7 +431,7 @@ li{
 
 .title{
     margin: 4rem 0 7rem 0;
-    text-align: center;
+    text-align: center; 
 }
 
 .title h1{
@@ -451,4 +451,153 @@ li{
     width: 50%;
     height: .4rem;
     z-index: 1;
+}
+
+.left img{
+    height: 40rem;
+    max-width: 35rem;
+    object-fit: cover;
+}
+
+.right h1{
+    margin-bottom: 2rem;
+}
+
+.right p{
+    line-height: 2;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.right h1 span{
+    color: var(--customColor);
+}
+
+a.btn{
+    display:inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--customColor);
+    color: #fff;
+    border: 2px solid var(--customColor);
+    border-radius: .5rem;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+    transition: all 300ms ease-in-out;
+}
+
+a.btn:hover{
+    transform: translateY(-3px);
+    background-color: transparent;
+    color: inherit;
+}
+
+a.btn:active{
+    transform: translateY(0)
+}
+
+@media only screen and (max-width: 996px){
+    .right h1{
+        font-size: 2rem;
+    }
+
+    .right p{
+        font-size: 1.5rem;
+    }
+
+    a.btn{
+        padding: .7rem 1.8rem;
+    }
+
+    .left img{
+        height: 40rem;
+        max-width: 25rem;
+    }
+}
+
+@media only screen and (max-width: 996px) {
+    .about-center{
+        grid-template-columns: 1fr;
+        gap: 3rem 0;
+    }
+
+    .left{
+        text-align: center;
+    }
+
+    .left img{
+        height: 40rem;
+        max-width: 90%;
+    }
+}
+
+/* Services */
+.theme{
+    background-color: #000;
+}
+
+.theme .title{
+    color: #fff;
+}
+
+.services-center{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    gap: 3rem;
+}
+
+.service{
+    color: #fff;
+    background-color: #111;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    transition: all 300ms ease-in-out;
+}
+
+.service span{
+    color: var(--customColor);
+    font-size: 4rem;
+    transition: all 300ms ease-in-out;
+}
+
+.service h2{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.service p{
+    font-size: 1.4rem;
+    color: #f1f1f1;
+}
+
+.service:hover{
+    background-color: var(--customColor);
+    color: #fff;
+}
+
+.service:hover span{
+    color: #fff;
+}
+
+/* Skills */
+.skills-box:not(:last-child){
+    margin-bottom:2rem;
+}
+
+.skills-box h4{
+    font-size: 1.8rem;
+    color: #888;
+    font-size: 500;
+}
+
+.skills-box .skills-ilt{
+    width:100%;
+    position:relative;
+    height: .4rem;
+    background-color: #ccc;
+    border-radius: .5rem;
+}
+
+.skills-box .skills-bar{
+    background-color: var(--customColor);
+    height: .4rem;
 }
