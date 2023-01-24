@@ -40,15 +40,15 @@
                         </div>
                     </div>
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                        <li class="nav-item"><a href="#teams" class="nav-link">Teams</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="#home" class="nav-link scroll-link">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link scroll-link">About</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link scroll-link">Services</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link scroll-link">Skills</a></li>
+                        <li class="nav-item"><a href="#teams" class="nav-link scroll-link">Teams</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link scroll-link">Contact</a></li>
                     </ul>
                 </div>
-                <div class="hamburguer">
+                <div class="hamburger">
                     <i class="fas fa-bars"></i>
                 </div>
             </div>
@@ -92,11 +92,11 @@
         </div>
 
         <div class="about-center container">
-            <div class="left">
+            <div class="left" data-aos="fade-down-right" data-aos-duration="2000">
                 <img src="./images/profile1.jpg" alt="">
             </div>
 
-            <div class="right">
+            <div class="right" data-aos="fade-up-left" data-aos-duration="2000">
                 <h1>I'm Alan a <span id="type2"></span></h1>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -116,7 +116,7 @@
         </div>
 
         <div class="services-center container">
-            <div class="service">
+            <div class="service" data-aos="fade-right" data-aos-duration="2000">
                 <span><i class="fab fa-accusoft"></i></span>
                 <h2>Site Reliability Engineer</h2>
                 <p>
@@ -124,7 +124,7 @@
                     Asperiores eaque dolorum alias ab ea quae.
                 </p>
             </div>
-            <div class="service">
+            <div class="service" data-aos="fade-up" data-aos-duration="2000">
                 <span><i class="fas fa-chart-line"></i></span>
                 <h2>Web Developer</h2>
                 <p>
@@ -132,7 +132,7 @@
                     Asperiores eaque dolorum alias ab ea quae.
                 </p>
             </div>
-            <div class="service">
+            <div class="service" data-aos="fade-left" data-aos-duration="2000">
                 <span><i class="fas fa-blender-phone"></i></span>
                 <h2>Data Analyst</h2>
                 <p>
@@ -149,7 +149,7 @@
         </div>
 
         <div class="skills-center container">
-            <div class="skills-left">
+            <div class="skills-left" data-aos="fade-down-right" data-aos-duration="2000">
                 <div class="skills-box">
                     <h4>HTML5</h4>
                     <div class="skills-ilt">
@@ -187,7 +187,7 @@
                 </div>
             </div>
 
-            <div class="right">
+            <div class="right" data-aos="fade-up-left" data-aos-duration="2000">
                 <h3>My creative skills and experience</h3>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -267,7 +267,7 @@
         </div>
 
         <div class="contact-center container">
-            <div class="left">
+            <div class="left" data-aos="fade-down-right" data-aos-duration="2000">
                 <h2>Get in touch</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                    Maiores corporis sed atque nobis ut velit ullam perspiciatis? 
@@ -295,10 +295,31 @@
                     </span>
                 </div>
             </div>
+            <div class="right" data-aos="fade-up-left" data-aos-duration="2000">
+                <form action="" class="form">
+                    <h2>Message me</h2>
+                    <div>
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <input type="text" placeholder="Subject">
+                    <textarea cols="10" rows="10" placeholder="Describe Project">
+                    </textarea>
+                    <a href="" class="btn">Send message</a>
+                </form>
+            </div>
         </div>
     </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>Desarrollado por <span>Alan Barani</span> | copy; 2023 All rights reserved</p>
+    </footer>
 </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="index.js"></script>
 </html>
