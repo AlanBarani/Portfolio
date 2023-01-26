@@ -240,7 +240,7 @@ li{
     transform: translateY(-50%);
     color: #fff;
   }
-  
+
   .hero h3 {
     font-weight: 400;
     font-size: 2rem;
@@ -314,7 +314,11 @@ li{
     left: 37rem;
     color: #fff;
   }
-  
+
+  a {
+    color:inherit;
+  }
+
   .icons span:not(:last-child) {
     margin-right: 1rem;
   }

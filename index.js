@@ -97,11 +97,13 @@ links.map(link=>{
 
 // Typeit
 
+
 new TypeIt('#type1', {
     speed: 120,
     loop: true,
     waitUntilVisible: true
-  }).type('Site Reliability Engineer',{delay: 400})
+  })
+  .type('Site Reliability Engineer',{delay: 400})
   .pause(500)
   .delete(25)
   .type("Web Developer",{delay: 400})
