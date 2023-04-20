@@ -41,6 +41,7 @@ navClose.addEventListener('click', ()=>{
     }
 })
 
+
 // Fix nav
 
 const navBar = document.querySelector('.nav');

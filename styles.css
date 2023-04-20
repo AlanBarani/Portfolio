@@ -36,6 +36,10 @@ a{
     text-decoration: none;
 }
 
+button{
+  text-decoration: none;
+}
+
 img{
     max-width: 100%;
 }
@@ -69,7 +73,7 @@ li{
     position: absolute;
     right: -5%;
     bottom: 0;
-    width: 100rem;
+    width: 90rem;
     z-index: -1;
 }
 
@@ -240,6 +244,7 @@ li{
     transform: translateY(-50%);
     color: #fff;
   }
+ 
 
   .hero h3 {
     font-weight: 400;
@@ -318,6 +323,11 @@ li{
   a {
     color:inherit;
   }
+
+  button {
+    color:inherit;
+  }
+
 
   .icons span:not(:last-child) {
     margin-right: 1rem;
@@ -485,6 +495,28 @@ li{
   .right h1 span {
     color: var(--customColor);
   }
+
+  button.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--customColor);
+    color: #fff;
+    border: 2px solid var(--customColor);
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 300ms ease-in-out;
+  }
+
+  button.btn:hover{
+    transform: translateY(-3px);
+    background-color: transparent;
+    color: inherit;
+  }
+  
+  button.btn:active{
+    transform: translateY(0);
+  }
+
   
   a.btn {
     display: inline-block;
@@ -517,6 +549,10 @@ li{
     }
   
     a.btn {
+      padding: 0.7rem 1.8rem;
+    }
+
+    button.btn{
       padding: 0.7rem 1.8rem;
     }
   
@@ -611,29 +647,55 @@ li{
     border-radius: 0.5rem;
   }
   
+
   .skills-box .skills-bar {
     background-color: var(--customColor);
     height: 0.4rem;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 2s;
   }
   
-  .skills-box .html {
+ @keyframes progress {
+    0%{
+      width: 0;
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+  .skill_bar .bar .js{
+    width: 80%;
+    animation: css 2s;
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+
+  .skills-box .docker {
     width: 95%;
   }
   
-  .skills-box .css {
-    width: 85%;
-  }
-  
-  .skills-box .javascript {
+  .skills-box .kubernetes {
     width: 90%;
   }
   
-  .skills-box .nodejs {
-    width: 80%;
+  .skills-box .gitlab {
+    width: 95%;
   }
   
-  .skills-box .mongodb {
-    width: 95%;
+  .skills-box .github {
+    width: 88%;
+  }
+  
+  .skills-box .bitbucket {
+    width: 85%;
   }
   
   .skills-box span {
@@ -749,7 +811,7 @@ li{
   }
   
   .form input,
-  .form textarea {
+  .form textarea, .form button {
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     padding: 1rem 0;
@@ -759,6 +821,12 @@ li{
     margin-bottom: 1rem;
     width: 100%;
     outline: none;
+  }
+
+  .form button {
+    width: 100%;
+    resize: vertical;
+    margin-bottom: 3rem;
   }
   
   .form textarea {
