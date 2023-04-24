@@ -680,8 +680,9 @@ li{
 
   .skills-box .docker {
     width: 95%;
+    
   }
-  
+
   .skills-box .kubernetes {
     width: 90%;
   }
@@ -697,7 +698,27 @@ li{
   .skills-box .bitbucket {
     width: 85%;
   }
+
+  .skills-box .java {
+    width: 85%;
+  }
+
+  .skills-box .CSHARP {
+    width: 82%;
+  }
+
+  .skills-box .SQL {
+    width: 80%;
+  }
   
+  .skills-box .CSS {
+    width: 86%;
+  }
+
+  .skills-box .JAVASCRIPT {
+    width: 80%;
+  }
+
   .skills-box span {
     position: absolute;
     bottom: 10%;
